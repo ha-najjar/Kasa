@@ -1,9 +1,12 @@
-import React from "react";
+import "../styles/Banner.scss";
 
-function Banner({ imageUrl, altText }) {
+function Banner(props) {
   return (
-    <div className="banner" style={{ backgroundImage: `url(${imageUrl})` }}>
-      <h1>{altText}</h1>
+    <div
+      className="banner"
+      style={{ backgroundImage: `url(${props.imageUrl})` }}
+    >
+      <h1>{props.altText}</h1>
     </div>
   );
 }

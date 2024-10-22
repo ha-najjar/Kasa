@@ -1,13 +1,9 @@
 .home .logements-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-}
-.home .card img {
-  width: 100%;
-  height: auto;
-}
-.home .card h2 {
-  font-size: 1.2rem;
-  margin-top: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 55px;
+  background-color: #f6f6f6;
+  padding: 55px;
+  border-radius: 10px;
+  margin-bottom: 55px;
 }/*# sourceMappingURL=Home.css.map */

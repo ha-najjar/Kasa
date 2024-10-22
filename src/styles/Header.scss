@@ -1,4 +1,4 @@
-/*.header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +18,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    color: #ff6060;
+    color: black;
     list-style-type: none;
     cursor: pointer;
     text-decoration: none;
@@ -73,6 +73,6 @@
   }
 }
 
-.underline {
+/*.underline {
   text-decoration: underline #ff6060;
 }*/

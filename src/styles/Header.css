@@ -1,66 +1,67 @@
-/*.header {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1240px;
   margin: 2rem;
-  &__logo {
-    width: 210px;
-    height: 68px;
-  }
-  &__nav {
-    display: flex;
-    flex-direction: row;
-    column-gap: 4rem;
-  }
-  &__element {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    color: #ff6060;
-    list-style-type: none;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  &__element:active {
-    text-decoration: underline #ff6060;
-  }
+}
+.header__logo {
+  width: 210px;
+  height: 68px;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+}
+.header__element {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: black;
+  list-style-type: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header__element:active {
+  -webkit-text-decoration: underline #ff6060;
+          text-decoration: underline #ff6060;
 }
 
 @media (max-width: 767px) {
   .header {
     margin: 1rem;
-    &__logo {
-      width: 145px;
-      height: 47px;
-    }
-    &__nav {
-      column-gap: 2rem;
-    }
-    &__element {
-      text-transform: uppercase;
-      font-size: 12px;
-    }
+  }
+  .header__logo {
+    width: 145px;
+    height: 47px;
+  }
+  .header__nav {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  .header__element {
+    text-transform: uppercase;
+    font-size: 12px;
   }
   .house {
-    text-decoration: underline #ff6060;
+    -webkit-text-decoration: underline #ff6060;
+            text-decoration: underline #ff6060;
   }
 }
-
 @media (max-width: 375px) {
-  .header {
-    &__logo {
-      height: auto;
-      max-width: 80px;
-      width: auto;
-    }
-    &__nav {
-      column-gap: 0.5rem;
-    }
+  .header__logo {
+    height: auto;
+    max-width: 80px;
+    width: auto;
+  }
+  .header__nav {
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
   }
 }
-
 @media (min-width: 768px) {
   .header {
     margin: auto;
@@ -72,7 +73,6 @@
     text-decoration: none;
   }
 }
-
-.underline {
+/*.underline {
   text-decoration: underline #ff6060;
 }*//*# sourceMappingURL=Header.css.map */
