@@ -26,7 +26,7 @@ const Header = () => {
           className="header__element"
           id="about" /*onClick={()=>{setUnderline('about')}}*/
         >
-          A propos
+          À propos
         </Link>
       </nav>
     </header>

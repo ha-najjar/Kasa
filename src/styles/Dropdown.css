@@ -1,0 +1,25 @@
+.dropdown {
+  margin: 20px 0;
+  border: 1px solid #ff6060;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.dropdown-header {
+  background-color: #ff6060;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+}
+.dropdown-header h3 {
+  margin: 0;
+}
+.dropdown-header span {
+  font-size: 1.2rem;
+}
+.dropdown-content {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-top: 1px solid #ff6060;
+}/*# sourceMappingURL=Dropdown.css.map */
