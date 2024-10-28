@@ -6,6 +6,7 @@ import Banner from "../components/Banner";
 import background from "../assets/home-background.png";
 
 function Home() {
+  document.title = "Accueil";
   const [logements, setLogements] = useState([]);
 
   useEffect(() => {

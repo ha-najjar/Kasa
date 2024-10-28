@@ -9,8 +9,7 @@ function AppRouter() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/logement/:id" element={<Details />} />
-      <Route path="/about" element={<About />} />{" "}
-      {/* Nouvelle route pour la page À propos */}
+      <Route path="/about" element={<About />} />
       <Route path="*" element={<Error />} />
     </Routes>
   );

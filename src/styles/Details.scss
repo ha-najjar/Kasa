@@ -1,0 +1,122 @@
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logement-details {
+  max-width: 1200px;
+  width: 100%;
+  margin: 20px 0;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: Montserrat;
+    color: #ff6060; /* Rouge du thème */
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #555; /* Gris pour le texte secondaire */
+  }
+
+  .tags {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    span {
+      background-color: #ff6060;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .log__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .host__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 20px;
+
+    img {
+      border-radius: 50%;
+      width: 64px;
+      height: 64px;
+      margin-right: 10px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #ff6060; /* Couleur de l’hôte en rouge */
+    }
+  }
+
+  .rating {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+
+    .star {
+      font-size: 1.5rem;
+      color: #ff6060; /* Couleur des étoiles en rouge */
+    }
+
+    .star-empty {
+      color: #ddd; /* Couleur des étoiles vides */
+    }
+  }
+}
+
+.collapse-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  .collapse {
+    width: 45%; /* Pour avoir deux collapses côte à côte */
+  }
+}
+
+/* Style du carousel */
+.carousel {
+  position: relative;
+  margin: 20px 0;
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .arrow-button.left {
+    left: 10px;
+  }
+
+  .arrow-button.right {
+    right: 10px;
+  }
+}

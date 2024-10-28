@@ -1,0 +1,10 @@
+.rating {
+  display: flex;
+}
+.rating .star {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+.rating .star.filled {
+  color: #ffcc00;
+}/*# sourceMappingURL=rating.css.map */

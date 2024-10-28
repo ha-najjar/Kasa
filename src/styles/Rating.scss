@@ -1,0 +1,11 @@
+.rating {
+  display: flex;
+
+  .star {
+    font-size: 1.5rem;
+    color: #ccc; // Couleur des étoiles non remplies
+    &.filled {
+      color: #ffcc00; // Couleur des étoiles remplies
+    }
+  }
+}

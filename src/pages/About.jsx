@@ -1,7 +1,7 @@
 import React from "react";
 import background from "../assets/about-background.png";
 import Banner from "../components/Banner";
-import Dropdown from "../components/Dropdown";
+import Collapse from "../components/Collapse";
 import "../styles/About.scss";
 
 /**
@@ -14,13 +14,13 @@ const About = () => {
     <main>
       <Banner imageUrl={background} altText=" " />
       <div className="a-propos">
-        <Dropdown
+        <Collapse
           title="Fiabilité"
           content="Le contenu de la section Fiabilité"
         />
-        <Dropdown title="Respect" content="Le contenu de la section Respect" />
-        <Dropdown title="Service" content="Le contenu de la section Service" />
-        <Dropdown
+        <Collapse title="Respect" content="Le contenu de la section Respect" />
+        <Collapse title="Service" content="Le contenu de la section Service" />
+        <Collapse
           title="Sécurité"
           content="Le contenu de la section Sécurité"
         />
