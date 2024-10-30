@@ -6,4 +6,14 @@
   padding: 55px;
   border-radius: 10px;
   margin-bottom: 55px;
+  margin-top: 55px;
+}
+@media (max-width: 767px) {
+  .home .logements-list {
+    background-color: white;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    padding: 55px 0 55px 0;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
 }/*# sourceMappingURL=Home.css.map */

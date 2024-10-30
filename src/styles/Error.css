@@ -35,6 +35,9 @@
 }
 
 @media (max-width: 768px) {
+  .error {
+    height: calc(100vh - 272px);
+  }
   .error h1 {
     font-size: 6rem; /* Réduction de la taille du texte pour les écrans mobiles */
   }

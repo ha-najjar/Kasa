@@ -22,14 +22,20 @@ function Details() {
           <div>
             <h1>{logement.title}</h1>
             <p>{logement.location}</p>
-            <p>{logement.tags}</p>
-          </div>
-          <div className="host__item">
-            <div>
-              <p>{logement.host.name}</p>
-              <Rating rating={logement.rating} />
+            <div className="tags">
+              {logement.tags.map((tag, index) => (
+                <span key={index} className="tag">
+                  {tag}
+                </span>
+              ))}
             </div>
-            <img src={logement.host.picture} />
+          </div>
+          <div className="host">
+            <div className="host__item">
+              <p>{logement.host.name}</p>
+              <img src={logement.host.picture} />
+            </div>
+            <Rating rating={logement.rating} />
           </div>
         </div>
         <div className="collapse-container ">

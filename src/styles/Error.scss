@@ -34,17 +34,18 @@
   text-decoration: underline;
 }
 @media (max-width: 768px) {
-  .error h1 {
-    font-size: 6rem; /* Réduction de la taille du texte pour les écrans mobiles */
-  }
-
-  .error p {
-    font-size: 1.2rem;
-  }
-
-  .error .link {
-    font-size: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  .error {
+    height: calc(100vh - 272px);
+    h1 {
+      font-size: 6rem; /* Réduction de la taille du texte pour les écrans mobiles */
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    .link {
+      font-size: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
   }
 }

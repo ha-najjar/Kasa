@@ -1,5 +1,14 @@
-.a-propos {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 110px;
+.container {
+  width: 100%;
+}
+
+.about {
+  /*width: calc(100% - 220px);*/
+  padding: 20px 110px 0 110px;
+}
+@media (max-width: 767px) {
+  .about {
+    width: 100%;
+    padding: 0;
+  }
 }/*# sourceMappingURL=About.css.map */

@@ -11,9 +11,10 @@ import "../styles/About.scss";
 const About = () => {
   document.title = "À propos";
   return (
-    <main>
+    <div className="container">
       <Banner imageUrl={background} altText=" " />
-      <div className="a-propos">
+
+      <div className="about">
         <Collapse
           title="Fiabilité"
           content="Le contenu de la section Fiabilité"
@@ -25,7 +26,7 @@ const About = () => {
           content="Le contenu de la section Sécurité"
         />
       </div>
-    </main>
+    </div>
   );
 };
 
