@@ -31,4 +31,9 @@
   font-weight: 700;
   line-height: 25.67px;
   z-index: 1;
+}
+@media (max-width: 767px) {
+  .card {
+    height: 340px;
+  }
 }/*# sourceMappingURL=Card.css.map */

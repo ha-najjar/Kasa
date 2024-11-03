@@ -15,35 +15,33 @@ function Details() {
   }
 
   return (
-    <main>
-      <div className="logement-details">
-        <Carousel images={logement.pictures} />
-        <div className="log__item">
-          <div>
-            <h1>{logement.title}</h1>
-            <p>{logement.location}</p>
-            <div className="tags">
-              {logement.tags.map((tag, index) => (
-                <span key={index} className="tag">
-                  {tag}
-                </span>
-              ))}
-            </div>
-          </div>
-          <div className="host">
-            <div className="host__item">
-              <p>{logement.host.name}</p>
-              <img src={logement.host.picture} />
-            </div>
-            <Rating rating={logement.rating} />
+    <div className="logement-details">
+      <Carousel images={logement.pictures} />
+      <div className="log__item">
+        <div>
+          <h1>{logement.title}</h1>
+          <p>{logement.location}</p>
+          <div className="tags">
+            {logement.tags.map((tag, index) => (
+              <span key={index} className="tag">
+                {tag}
+              </span>
+            ))}
           </div>
         </div>
-        <div className="collapse-container ">
-          <Collapse title="Description" content={logement.description} />
-          <Collapse title="Équipements" content={logement.equipments} />
+        <div className="host">
+          <div className="host__item">
+            <p>{logement.host.name}</p>
+            <img src={logement.host.picture} />
+          </div>
+          <Rating rating={logement.rating} />
         </div>
       </div>
-    </main>
+      <div className="collapse-container ">
+        <Collapse title="Description" content={logement.description} />
+        <Collapse title="Équipements" content={logement.equipments} />
+      </div>
+    </div>
   );
 }
 

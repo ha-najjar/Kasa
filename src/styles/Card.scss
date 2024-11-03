@@ -33,4 +33,7 @@
     line-height: 25.67px;
     z-index: 1;
   }
+  @media (max-width: 767px) {
+    height: 340px;
+  }
 }
