@@ -1,6 +1,5 @@
 @charset "UTF-8";
 .logement-details {
-  max-width: 1200px;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -78,13 +77,6 @@
   display: flex;
   justify-content: flex-end;
   margin: 10px 0;
-}
-.logement-details .rating .star {
-  font-size: 1.5rem;
-  color: #ff6060; /* Couleur des étoiles en rouge */
-}
-.logement-details .rating .star-empty {
-  color: #ddd; /* Couleur des étoiles vides */
 }
 
 .collapse-container {
