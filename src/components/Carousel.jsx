@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Carousel.scss";
 
-// Définition du composant Carousel
 const Carousel = ({ images }) => {
   // Déclaration d'un état pour suivre l'index de l'image courante affichée
   const [currentIndex, setCurrentIndex] = useState(0);

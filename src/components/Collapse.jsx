@@ -4,7 +4,7 @@ import "../styles/Collapse.scss";
 // Déclaration du composant fonctionnel Collapse qui reçoit deux props : `title` (le titre de la section) et `content` (le contenu à afficher dans la section).
 function Collapse({ title, content }) {
   // Déclare un état local `isOpen`, initialisé à `false` pour indiquer que la section est fermée par défaut.
-  // `setIsOpen` est la fonction pour modifier cet état.
+
   const [isOpen, setIsOpen] = useState(false);
 
   // Déclare une fonction `toggleCollapse` qui inverse l'état `isOpen` chaque fois qu'elle est appelée.
@@ -13,13 +13,12 @@ function Collapse({ title, content }) {
 
   return (
     // Ajoute une classe CSS conditionnelle `collapse--open` si `isOpen` est vrai,
-    // pour pouvoir appliquer des styles différents selon que la section est ouverte ou fermée.
+
     <div className={`collapse ${isOpen ? "collapse--open" : ""}`}>
       {/* En-tête de la section collapse, cliquable pour ouvrir ou fermer la section */}
       <div className="collapse-header" onClick={toggleCollapse}>
-        {/* Affiche le titre de la section */}
         <h3>{title}</h3>
-        {/* Affiche un symbole ▲ ou ▼ en fonction de l'état ouvert ou fermé de la section */}
+
         <span>{isOpen ? "▲" : "▼"}</span>
       </div>
 

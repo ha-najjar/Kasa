@@ -7,11 +7,14 @@ import background from "../assets/home-background.png";
 
 function Home() {
   document.title = "Accueil";
+  // Déclaration de l'état local 'logements' et sa fonction de mise à jour 'setLogements'
+  // Initialisé comme un tableau vide
   const [logements, setLogements] = useState([]);
-
+  // Utilisation de useEffect pour charger les données de logements lors du montage du composant
   useEffect(() => {
+    // Mise à jour de l'état 'logements' avec les données importées 'logementsData'
     setLogements(logementsData);
-  }, []);
+  }, []); // Le tableau vide [] indique que cet effet ne s'exécutera qu'une seule fois
 
   return (
     <div className="home">
